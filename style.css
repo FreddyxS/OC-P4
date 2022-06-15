@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding-top : 20px;
 }
 
 .bg-center,
@@ -382,10 +382,30 @@ a:hover {
     margin-right: 10px;
     margin-top: 20px;
 }
+
+.image {
+    width: 570px;
+    height: 320px;
+    object-fit: cover;
+}
+
 @media (min-width: 768px) {
 
-    .col-sm-6 {
+    .col-sm-6{
         width: 100%;
+    }
+
+    .col-sm-6--1{
+        width: 50%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .col-sm-6--3 {
+        width: 50%;
     }
     .site-navigation {
         top: 50%;
@@ -422,6 +442,10 @@ a:hover {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+    }
+
+    .med-width-whitespace {
+        display : flex;
     }
 }
 
@@ -1075,5 +1099,11 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .col-sm-6--1 {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
